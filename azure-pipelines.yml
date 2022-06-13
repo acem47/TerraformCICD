@@ -21,8 +21,8 @@ stages:
     steps:
     - task: Docker@2
       inputs:
-        containerRegistry: 'docker connection'
-        repository: 'anish78/demodckreg'
+        containerRegistry: 'Docker hub Connection'
+        repository: 'moeyasin477/test-cicd-nodejs'
         command: 'buildAndPush'
         Dockerfile: '**/Dockerfile'
         tags: |
